@@ -69,13 +69,16 @@ section ul {
 
 .title-icons svg, .icons-edit svg {
   cursor: pointer;
-  transition: 0.5s color;
+  transition: 0.9s color;
 }
 
-.title-icons svg:hover, .icons-edit svg:hover {
-  color: #504579;
+.title-icons svg:hover {
+  color: rgb(187, 68, 68);
 }
 
+.icons-edit svg:hover {
+  color: rgb(222, 231, 96);
+}
 .icons-edit {
   display: flex;
   justify-content: flex-end;
