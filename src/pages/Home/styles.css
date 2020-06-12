@@ -1,5 +1,5 @@
 header {
-  background-color: #261d46;
+  background-color: #1d1c24;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +31,7 @@ section ul {
   margin-top: 20px;
   max-width: 600px;
   min-width: 600px;
-  background-color: #261d46;
+  background-color: #1d1c24;
   padding: 12px;
  
   border-radius: 20px;
@@ -57,7 +57,7 @@ section ul {
   flex-direction: row;
   justify-content: space-between;
 
-  background: #21183d;
+  /* background: #21183d; */
 
   border-radius: 20px;
   min-width: 100%;
