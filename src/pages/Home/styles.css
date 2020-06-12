@@ -68,15 +68,16 @@ section ul {
 }
 
 .title-icons svg, .icons-edit svg {
+  color: #eee;
   cursor: pointer;
   transition: 0.9s color;
 }
 
-.title-icons svg:hover {
+.title-icons a svg:hover {
   color: rgb(187, 68, 68);
 }
 
-.icons-edit svg:hover {
+.icons-edit a svg:hover {
   color: rgb(222, 231, 96);
 }
 .icons-edit {
