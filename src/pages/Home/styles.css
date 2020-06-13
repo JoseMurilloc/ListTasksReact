@@ -56,11 +56,11 @@ section ul {
   transition: 0.9s color;
 }
 
-.title-icons a svg:hover {
+.title-icons svg:hover {
   color: rgb(187, 68, 68);
 }
 
-.icons-edit a svg:hover {
+.icons-edit svg:hover {
   color: rgb(222, 231, 96);
 }
 .icons-edit {
