@@ -1,13 +1,13 @@
 {
   "tasks": [
     {
-      "id": 1,
       "title": "Adicionar um botão de voltar no site",
-      "description": "No site principal da facape tem um botão que esta quebrando o layout aos 650px de largura, resolve o problema quando tiver tempo."
+      "description": "UPDATE ALEATORIO ALMELTANDO O NUMERO DE CARACTERE PARA VER NO QUE VAI DAR",
+      "id": 1
     },
     {
-      "title": "Usando o Update denovo pt2",
-      "description": "UPDATE DENOVO",
+      "title": "Usando o Update denovo pt3",
+      "description": "UPDATE DENOVO DENOVO",
       "id": 2
     },
     {
@@ -19,6 +19,41 @@
       "id": 4,
       "title": "Começar as modificações no projeto mobile",
       "description": "O mobile esta cada vez mais sendo usado então presamos melhora-lo."
+    },
+    {
+      "title": "Criar um app sobre NTI",
+      "description": "NTI precisa de app da biblioteca para dia 35 no máximo",
+      "id": 5
+    },
+    {
+      "title": "Adicionar upload de imagens dos alunos",
+      "description": "ADICIONANDO UMA TAREFA",
+      "id": 6
+    },
+    {
+      "title": "ADICINAND UMA NOVA",
+      "description": "TAREFA AQUI",
+      "id": 7
+    },
+    {
+      "title": "OPA",
+      "description": "TUDO BOM COM VOCÊ MEI AMIGO?",
+      "id": 8
+    },
+    {
+      "title": "BESTEITA 1",
+      "description": "DESCRIÇÃO 1",
+      "id": 9
+    },
+    {
+      "title": "BESTEITA 2",
+      "description": "descrição 2",
+      "id": 10
+    },
+    {
+      "title": "AAAA",
+      "description": "BBBBBB",
+      "id": 11
     }
   ]
 }

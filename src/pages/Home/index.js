@@ -24,7 +24,7 @@ function Home() {
   return (
     <>
       <section>
-        <Link to="/">
+        <Link to="/add">
           <button className="add-task">
             Adicinar nova tarefa
           </button>

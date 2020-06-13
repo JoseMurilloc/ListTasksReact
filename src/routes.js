@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Edit from './pages/Edit';
+import Add from './pages/Add';
 
 function Routes() {
   return(
@@ -10,6 +11,7 @@ function Routes() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/edit/:id" component={Edit} />
+        <Route exact path="/add" component={Add} />
       </Switch>
     </BrowserRouter>
   );
