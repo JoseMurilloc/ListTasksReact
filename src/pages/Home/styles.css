@@ -1,25 +1,8 @@
-header {
-  background-color: #1d1c24;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-header small {
-  margin-left: 10px;
-  color: #eee;
-  font-weight: bold;
-}
-
 section {
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* background: red;
-  padding: 20px; */
 }
 
 section ul {
