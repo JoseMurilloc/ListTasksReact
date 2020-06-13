@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Adicionar um botão de voltar no site",
+      "description": "No site principal da facape tem um botão que esta quebrando o layout aos 650px de largura, resolve o problema quando tiver tempo."
+    },
+    {
+      "id": 2,
+      "title": "Adicionar upload de imagens dos alunos",
+      "description": "Precisamos atender as demandas dos alunos."
+    },
+    {
+      "id": 3,
+      "title": "Remove icones no formato antigo",
+      "description": "Os icones pedem por uma atualização, os mesmo estão estaginados."
+    },
+    {
+      "id": 4,
+      "title": "Começar as modificações no projeto mobile",
+      "description": "O mobile esta cada vez mais sendo usado então presamos melhora-lo."
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './styles.css';
 import { AiOutlineEdit, AiFillDelete } from 'react-icons/ai';
 
-import arrayTasks from '../../utils/tasks';
+import api from '../../services/api';
 
 import { Link } from 'react-router-dom';
 
@@ -11,7 +11,14 @@ function Home() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    setTasks(arrayTasks);
+
+    async function loadTasks() {
+      const response = await api.get('/tasks');
+      setTasks(response.data);
+    }
+
+    loadTasks();
+
   }, []);
 
   return (

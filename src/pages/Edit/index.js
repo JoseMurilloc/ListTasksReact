@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './styles.css';
 
 import { Link, useParams } from 'react-router-dom';
-import arrayTasks from '../../utils/tasks';
+import api from '../../services/api';
 
 
 function Edit() {
@@ -11,11 +11,12 @@ function Edit() {
   const [task, setTask] = useState({});
 
   useEffect(() => {
-    const response = arrayTasks.filter(array => array.id === Number(id));
-    setTask({ 
-      title: response[0].title,
-      description: response[0].description
-    })
+    
+    async function loadTask() {
+      const response = await api.get(`/tasks/${id}`);
+      setTask(response.data)
+    }
+    loadTask();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
