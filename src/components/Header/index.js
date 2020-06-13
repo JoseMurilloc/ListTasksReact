@@ -6,7 +6,7 @@ function Header() {
   return (
     <header>
       <h1>FACAPE NTI</h1>
-      <small>Gerenciador de terefas</small>
+      <small>Gerenciador de tarefas</small>
     </header>
   );
 }
