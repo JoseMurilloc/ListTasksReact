@@ -69,3 +69,21 @@ section ul {
 
   padding: 0 15px 10px 10px;
 }
+
+.add-task {
+  margin-top: 20px;
+  width: 200px;
+  height: 60px;
+  background: #04d361;
+  font-size: 15px;
+  border: none;
+  border-radius: 20px;
+  box-shadow:  0 0 10px #04d361, 0 0 40px #04d361, 0 0 80px #04d361;
+  font-weight: bold;
+
+  transition: 0.5s font-size;
+}
+
+.add-task:hover {
+  font-size: 18px;
+}
