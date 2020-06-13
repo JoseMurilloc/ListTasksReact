@@ -16,11 +16,6 @@ function Home() {
 
   return (
     <>
-      <header>
-        <h1>FACAPE NTI</h1>
-        <small>Gerenciador de terefas</small>
-      </header>
-      
       <section>
 
       </section>
