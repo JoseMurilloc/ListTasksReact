@@ -88,13 +88,13 @@ section ul {
   font-size: 18px;
 }
 
-
-/* CSS confirm delete task */
-
 .button-off {
   background-color: transparent;
   border: none;
 }
+
+
+/* CSS confirm delete task */
 
 .swal-overlay {
   background-color: rgba(27, 23, 31, 0.562);
@@ -116,6 +116,7 @@ section ul {
 }
 
 .swal-button {
-  background-color: #04d361;
+  background-color: rgb(187, 68, 68);
   border: none;
+  color: #eee;
 }
