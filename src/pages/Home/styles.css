@@ -88,7 +88,34 @@ section ul {
   font-size: 18px;
 }
 
+
+/* CSS confirm delete task */
+
 .button-off {
   background-color: transparent;
+  border: none;
+}
+
+.swal-overlay {
+  background-color: rgba(27, 23, 31, 0.562);
+}
+
+.swal-modal {
+  background-color: #1d1c24;
+  border-radius: 20px;
+  width: 400px;
+}
+
+.swal-title {
+  font-weight: bold;
+  color: #eee;
+}
+
+.swal-text {
+  color: #eee;
+}
+
+.swal-button {
+  background-color: #04d361;
   border: none;
 }

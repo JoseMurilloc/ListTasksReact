@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-import './styles.css';
 import { AiOutlineEdit, AiFillDelete } from 'react-icons/ai';
+import swal from 'sweetalert';
+
+import './styles.css';
 
 import api from '../../services/api';
 
@@ -22,12 +24,34 @@ function Home() {
   }, []);
 
   async function handleDeleteTask(task) {
-    alert(`Delete, a tarefa? ${task.title} - ${task.id}`)
+    
+    swal({
+      content: '<input/>',
+      title: `Deseja remover a tarefa?`,
+      text: `A tarefa ${task.title} sera deletada caso confirme`,
+      className: [
+        'swal-overlay',
+        'swal-modal',
+        'swal-title',
+        'swal-text',
+        'swal-button'
+      ],
+      buttons: ['Cancelar', true],
+      dangerMode: true,
+    })
+    .then(async (willDelete) => {
+      if (willDelete) {
+        await api.delete(`/tasks/${task.id}`)
+    
+        const tasksRemove = tasks.filter(t => t.id !== task.id);
+        setTasks(tasksRemove)
+    
+        swal("Poof! Tarefa deletada com sucesso!");
+      } else {
+        swal("Operação cancelada");
+      }
+    });
 
-    await api.delete(`/tasks/${task.id}`)
-
-    const tasksRemove = tasks.filter(t => t.id !== task.id);
-    setTasks(tasksRemove)
   }
 
   return (

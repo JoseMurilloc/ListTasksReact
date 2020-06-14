@@ -6,29 +6,9 @@
       "id": 1
     },
     {
-      "title": "Usando o Update denovo pt3",
-      "description": "UPDATE DENOVO DENOVO DENOVO",
-      "id": 2
-    },
-    {
-      "id": 3,
-      "title": "Remove icones no formato antigo",
-      "description": "Os icones pedem por uma atualização, os mesmo estão estaginados."
-    },
-    {
       "id": 4,
       "title": "Começar as modificações no projeto mobile",
       "description": "O mobile esta cada vez mais sendo usado então presamos melhora-lo."
-    },
-    {
-      "title": "Criar um app sobre NTI",
-      "description": "NTI precisa de app da biblioteca para dia 35 no máximo",
-      "id": 5
-    },
-    {
-      "title": "Adicionar upload de imagens dos alunos",
-      "description": "ADICIONANDO UMA TAREFA",
-      "id": 6
     }
   ]
 }
