@@ -21,6 +21,15 @@ function Home() {
 
   }, []);
 
+  async function handleDeleteTask(task) {
+    alert(`Delete, a tarefa? ${task.title} - ${task.id}`)
+
+    await api.delete(`/tasks/${task.id}`)
+
+    const tasksRemove = tasks.filter(t => t.id !== task.id);
+    setTasks(tasksRemove)
+  }
+
   return (
     <>
       <section>
@@ -34,11 +43,13 @@ function Home() {
       <section>
         <ul>
           {tasks.map(task => (
-            <li key={tasks.id}>
+            <li key={task.id}>
               <div className="container-list">
                 <div className="title-icons">
                   <h1>{task.title}</h1>
-                  <AiFillDelete size={25} />
+                  <button onClick={() => handleDeleteTask(task)} className="button-off">
+                    <AiFillDelete size={25} />
+                  </button>
                 </div>
               
                 <span>{task.description}</span>

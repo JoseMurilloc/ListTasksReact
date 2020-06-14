@@ -87,3 +87,8 @@ section ul {
 .add-task:hover {
   font-size: 18px;
 }
+
+.button-off {
+  background-color: transparent;
+  border: none;
+}
