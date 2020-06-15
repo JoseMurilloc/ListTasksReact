@@ -120,3 +120,22 @@ section ul {
   border: none;
   color: #eee;
 }
+.list {
+  overflow: hidden;
+}
+
+.list-task {
+  animation: show-list 1s;
+}
+
+@keyframes show-list {
+  from {
+    opacity: 0;
+    transform: translateY(-15%)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+}

@@ -2,6 +2,8 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+
+  overflow: hidden;
 }
 
 form {
@@ -17,6 +19,7 @@ form {
   flex-direction: column;
   align-items: center;
 
+  animation: show-list 1s;
 }
 
 form .group-item {
@@ -78,4 +81,22 @@ form .group-button button {
   text-align: center;
   color: #333;
   padding-top: 15px;
+}
+
+
+
+@keyframes show-list {
+  from {
+    opacity: 0;
+    transform: translateY(-15%)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+}
+
+textarea {
+  resize: none;
 }

@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { AiOutlineEdit, AiFillDelete } from 'react-icons/ai';
 import swal from 'sweetalert';
-
 import './styles.css';
-
 import api from '../../services/api';
 
 import { Link } from 'react-router-dom';
@@ -21,7 +19,7 @@ function Home() {
 
     loadTasks();
 
-  }, []);
+  }, []); 
 
   async function handleDeleteTask(task) {
     
@@ -65,9 +63,9 @@ function Home() {
       </section>
 
       <section>
-        <ul>
+        <ul className="list">
           {tasks.map(task => (
-            <li key={task.id}>
+            <li className="list-task" key={task.id}>
               <div className="container-list">
                 <div className="title-icons">
                   <h1>{task.title}</h1>

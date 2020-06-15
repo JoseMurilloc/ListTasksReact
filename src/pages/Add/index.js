@@ -26,7 +26,7 @@ function Add() {
 
   return (
     <div className="container">
-      <form onSubmit={handleAddTask}>
+      <form className="Form" onSubmit={handleAddTask}>
 
         <h1>Adicinar nova tarefa</h1>
 
